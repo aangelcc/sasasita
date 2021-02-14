@@ -1,0 +1,540 @@
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: url("assets/acropolis.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#overlay-golden {
+  background: rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.overlay > div {
+  flex: 0 1;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+/* Golden ticket */
+body {
+  background-color: #faf0e6;
+}
+
+.ticket {
+  width: 370px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 150px;
+
+  background-repeat: repeat-y;
+  background-position: 0 0, 0 0, 100% 0, 100% 0;
+  background-image: linear-gradient(45deg, transparent 75%, #e2af3c 75%),
+    linear-gradient(135deg, transparent 75%, #e2af3c 75%),
+    linear-gradient(-45deg, transparent 75%, #e2af3c 75%),
+    linear-gradient(-135deg, transparent 75%, #e2af3c 75%);
+  background-size: 30px 15px;
+
+  transform: translateY(-50%);
+  box-shadow: 0 40px 15px -35px rgba(0, 0, 0, 0.4);
+}
+
+.ticket::before {
+  content: "TICKET DORADO";
+  position: absolute;
+  left: 50%;
+
+  width: 310px;
+  height: 150px;
+
+  background-color: #e2af3c;
+  background: linear-gradient(
+    #e2af3c,
+    #e2af3c 15px,
+    #292323 15px,
+    #292323 17px,
+    #e2af3c 17px,
+    #e2af3c 90px,
+    #292323 90px,
+    #292323 92px,
+    #e2af3c 92px,
+    #e2af3c 120px,
+    #292323 120px,
+    #292323 122px,
+    #e2af3c 122px
+  );
+
+  font-size: 33px;
+  font-family: Impact, Charcoal, sans-serif;
+  line-height: 3;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  transform: translateX(-50%);
+}
+
+.ticket::after {
+  content: "DREAM HOLIDAYS AT MALAGA";
+  position: absolute;
+  left: 50%;
+
+  width: 330px;
+  height: 150px;
+
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 13, 0.2),
+    rgba(88, 70, 35, 0.4),
+    rgba(46, 27, 11, 0.5),
+    rgba(255, 255, 13, 0.2) 80%
+  );
+
+  font-size: 12px;
+  font-family: "Time New Roman", Times, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 22.5;
+
+  transform: translateX(-50%);
+}
+
+/* Bouncing ball*/
+.box {
+  position: absolute;
+  height: 160px;
+  width: 205px;
+  cursor: pointer;
+}
+/* CSS Loader */
+.lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+.lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+}
+.lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+/* Raccoon */
+/*Colors */
+.mprRaccoon {
+  height: 268px;
+  width: 205px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.mprRaccoon_base_middle {
+  height: 155px;
+  width: 138px;
+  background-color: #838383;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.mprRaccoon_base_left {
+  height: 47px;
+  width: 143px;
+  background-color: #838383;
+  border-radius: 50%;
+  position: absolute;
+  left: -12px;
+  bottom: 136px;
+  transform: rotate(139deg);
+  z-index: 2;
+}
+.mprRaccoon_base_right {
+  height: 47px;
+  width: 143px;
+  background-color: #838383;
+  border-radius: 50%;
+  position: absolute;
+  right: -12px;
+  bottom: 136px;
+  transform: rotate(-139deg);
+  z-index: 2;
+}
+.mprRaccoon_ears_left {
+  height: 71px;
+  width: 52px;
+  background-color: #838383;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  left: 23px;
+  top: 40px;
+  transform: rotate(-17deg);
+}
+.mprRaccoon_ears_right {
+  height: 71px;
+  width: 52px;
+  background-color: #838383;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  right: 23px;
+  top: 40px;
+  transform: rotate(17deg);
+}
+.mprRaccoon_ears_leftInner {
+  height: 30px;
+  width: 19px;
+  background-color: #231f20;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  left: 36px;
+  top: 60px;
+  transform: rotate(162deg);
+}
+.mprRaccoon_ears_rightInner {
+  height: 30px;
+  width: 19px;
+  background-color: #231f20;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+  right: 36px;
+  top: 60px;
+  transform: rotate(-162deg);
+}
+.mprRaccoon_cheeks {
+  height: 80px;
+  width: 203px;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 121px;
+}
+.mprRaccoon_cheekLeft {
+  height: 70px;
+  width: 106px;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 4;
+  transform: rotate(-26deg);
+  left: -3px;
+  top: 108px;
+}
+.mprRaccoon_cheekRight {
+  height: 70px;
+  width: 106px;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 4;
+  transform: rotate(26deg);
+  right: -3px;
+  top: 108px;
+}
+.mprRaccoon_mouth {
+  height: 14px;
+  width: 40px;
+  background-color: #4d4c4d;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 4;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 55px;
+}
+.mprRaccoon_eyesBrowLeft {
+  height: 36px;
+  width: 15px;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 6;
+  left: 79px;
+  top: 96px;
+  transform: rotate(-24deg);
+}
+.mprRaccoon_eyesBrowRight {
+  height: 36px;
+  width: 15px;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 6;
+  right: 79px;
+  top: 96px;
+  transform: rotate(24deg);
+}
+.mprRaccoon_eyesBrowLeft-dark {
+  height: 30px;
+  width: 12px;
+  background-color: #272626;
+  left: 78px;
+  top: 109px;
+  transform: rotate(-36deg);
+}
+.mprRaccoon_eyesBrowRight-dark {
+  height: 30px;
+  width: 12px;
+  background-color: #272626;
+  right: 78px;
+  top: 109px;
+  transform: rotate(36deg);
+}
+.mprRaccoon_snoutLeft {
+  height: 62px;
+  width: 62px;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 6;
+  left: 92px;
+  bottom: 55px;
+}
+.mprRaccoon_snoutRight {
+  height: 62px;
+  width: 62px;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 6;
+  right: 92px;
+  bottom: 55px;
+}
+.mprRaccoon_eyesOutter {
+  height: 89px;
+  width: 152px;
+  background-color: #272626;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 70px;
+}
+.mprRaccoon_eyesOutter-left {
+  height: 58px;
+  width: 20px;
+  z-index: 6;
+  right: auto;
+  left: 60px;
+  bottom: 77px;
+  transform: rotate(-139deg);
+}
+.mprRaccoon_eyesOutter-right {
+  height: 58px;
+  width: 20px;
+  z-index: 6;
+  right: 60px;
+  left: auto;
+  bottom: 77px;
+  transform: rotate(139deg);
+}
+.mprRaccoon_nose {
+  height: 60px;
+  width: 18px;
+  background-color: #4d4c4d;
+  border-radius: 30%;
+  position: absolute;
+  z-index: 6;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 70px;
+}
+.mprRaccoon_nose-left {
+  height: 33px;
+  width: 22px;
+  border-radius: 50%;
+  z-index: 7;
+  left: -4px;
+  bottom: 100px;
+  transform: rotate(169deg);
+}
+.mprRaccoon_nose-right {
+  height: 33px;
+  width: 22px;
+  border-radius: 50%;
+  z-index: 7;
+  right: -4px;
+  bottom: 100px;
+  transform: rotate(-169deg);
+}
+.mprRaccoon_nose-circleTop {
+  height: 17px;
+  width: 28px;
+  background-color: #6d6e6e;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 7;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 65px;
+}
+.mprRaccoon_nose-circle {
+  height: 17px;
+  width: 28px;
+  background-color: #231f20;
+  border-radius: 45%;
+  position: absolute;
+  z-index: 8;
+  margin: auto;
+  right: 0;
+  left: 0;
+  bottom: 62px;
+}
+.mprRaccoon_eyeLids {
+  height: 25px;
+  width: 26px;
+  background-color: #b2b2b2;
+  border-radius: 50%;
+  z-index: 9;
+}
+.mprRaccoon_eyeLids-left {
+  position: absolute;
+  left: 52px;
+  bottom: 115px;
+}
+.mprRaccoon_eyeLids-right {
+  position: absolute;
+  right: 52px;
+  bottom: 115px;
+}
+.mprRaccoon_eyeReflectionLeft {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 12;
+  left: 63px;
+  bottom: 129px;
+  background-color: #ffffff;
+}
+.mprRaccoon_eyeReflectionRight {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 12;
+  right: 63px;
+  bottom: 129px;
+  background-color: #ffffff;
+}
+.mprRaccoon_eyeColorLeft {
+  height: 21px;
+  width: 23px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  left: 55px;
+  bottom: 118px;
+  background-color: #272626;
+}
+.mprRaccoon_eyeColorRight {
+  height: 21px;
+  width: 23px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  right: 55px;
+  bottom: 118px;
+  background-color: #272626;
+}
+.mprRaccoon_eyePupilLeft {
+  height: 13px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 11;
+  left: 60px;
+  bottom: 125px;
+  background-color: #272626;
+}
+.mprRaccoon_eyePupilRight {
+  height: 13px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 11;
+  right: 60px;
+  bottom: 125px;
+  background-color: #272626;
+}

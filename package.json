@@ -1,0 +1,22 @@
+{
+  "name": "sasasita",
+  "version": "1.0.0",
+  "description": "Racoons power",
+  "main": "main.js",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aangelcc/sasasita.git"
+  },
+  "author": "antonio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aangelcc/sasasita/issues"
+  },
+  "homepage": "https://github.com/aangelcc/sasasita#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
