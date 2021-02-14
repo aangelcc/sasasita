@@ -97,7 +97,7 @@ body {
 }
 
 .ticket::after {
-  content: "DREAM HOLIDAYS AT MALAGA";
+  content: "DREAM HOLIDAYS IN MALAGA";
   position: absolute;
   left: 50%;
 
