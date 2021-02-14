@@ -40,7 +40,7 @@ $("document").ready(function () {
           .fadeOut("slow")
           .fadeIn("slow", function () {
             alert(
-              "Catching a wild raccoon is not always easy... That's why you got this prize:\n DREAM HOLIDAYS IN MALAGA!\n What will you get during your stay?:\n - Unlimited porra\n...That's it. What else is needed? :P. \nNow let Paco dance, enjoy the music and be a ΜΑΣΑΜΠΟΥΚΑ!!"
+              "Catching a wild raccoon is not always easy... That's why you got this prize:\n DREAM HOLIDAYS IN MALAGA!\n What will you get during your stay?:\n - Unlimited porra antequerana\n...That's it. What else is needed? :P. \nNow let Paco dance, enjoy the music and be a ΜΑΣΑΜΠΟΥΚΑ!!"
             );
           });
       });
